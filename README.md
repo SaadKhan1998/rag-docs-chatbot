@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 # 📄 Retrieval-Augmented Generation (RAG) System for Document Q&A
 
 This project implements an **end-to-end Retrieval-Augmented Generation (RAG) pipeline** that enables semantic question answering over private PDF documents using Large Language Models (LLMs) and a vector database.
@@ -160,23 +161,3 @@ Evaluation metrics for retrieval quality
 📄 License
 
 This project is for educational and portfolio purposes.
-
-
----
-
-## ✅ What this README achieves
-- Explains **what** you built  
-- Explains **how it works**  
-- Shows **engineering maturity**  
-- Makes the project runnable by recruiters  
-- Clearly signals **GenAI / AI Engineer competence**
-
----
-
-### Next optional step
-If you want, I can:
-- generate a `.gitignore`
-- review your repo before first push
-- help you tag this as **v1.0**
-
-Just tell me 👍
