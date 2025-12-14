@@ -1,0 +1,26 @@
+# Python
+__pycache__/
+*.py[cod]
+*.pyo
+
+# Virtual environment
+rag_env/
+venv/
+.env/
+
+# Environment variables
+.env
+
+# Vector database
+storage/
+
+# OS files
+.DS_Store
+Thumbs.db
+
+# Editor settings
+.vscode/
+.idea/
+
+# Logs
+*.log
