@@ -1,5 +1,5 @@
-<<<<<<< HEAD
-# 📄 Retrieval-Augmented Generation (RAG) System for Document Q&A
+
+# Retrieval-Augmented Generation (RAG) System for Document QnA
 
 This project implements an **end-to-end Retrieval-Augmented Generation (RAG) pipeline** that enables semantic question answering over private PDF documents using Large Language Models (LLMs) and a vector database.
 
@@ -7,7 +7,7 @@ The system ingests PDFs, converts their content into vector embeddings, retrieve
 
 ---
 
-## 🚀 Features
+## Features
 
 - PDF document ingestion and preprocessing  
 - Text chunking and vector embedding generation  
@@ -19,7 +19,7 @@ The system ingests PDFs, converts their content into vector embeddings, retrieve
 
 ---
 
-## 🧠 System Architecture
+##  Architecture
 
 PDFs → Text Extraction → Chunking → Embeddings → Vector DB (Chroma)
 ↓
@@ -28,7 +28,7 @@ User Question → Embedding → Retrieval → Context Injection → LLM → Answ
 
 ---
 
-## 🛠️ Tech Stack
+## Tech Stack
 
 - **Python**
 - **LangChain (latest modular APIs)**
@@ -39,7 +39,7 @@ User Question → Embedding → Retrieval → Context Injection → LLM → Answ
 
 ---
 
-## 📁 Project Structure
+## Project Structure
 
 RAG/
 ├── app/
@@ -59,15 +59,15 @@ RAG/
 ## ⚙️ Setup Instructions
 
 ### follow the steps
-1️⃣ Create virtual environment
+1. Create virtual environment
 ```bash
 python -m venv rag_env
 source rag_env/bin/activate   # Windows: rag_env\Scripts\activate
 
-2️⃣ Install dependencies
+2. Install dependencies
 pip install -r requirements.txt
 
-3️⃣ Configure environment variables
+3. Configure environment variables
 
 Create a .env file:
 
@@ -75,7 +75,7 @@ OPENAI_API_KEY=your_openai_key_here
 LLM_MODEL_NAME=gpt-4.1-mini
 EMBEDDING_MODEL_NAME=text-embedding-3-small
 
-📥 Ingest Documents
+- Ingest Documents
 
 Place one or more PDF files into the data/ folder
 
@@ -94,7 +94,7 @@ generate embeddings
 
 store them in ChromaDB
 
-▶️ Run the API
+- Run the API
 uvicorn app.api:app --reload
 
 
@@ -107,7 +107,7 @@ Interactive API docs:
 
 http://127.0.0.1:8000/docs
 
-❓ Example Query
+- Example Query
 
 Request
 
@@ -128,7 +128,7 @@ If the answer is not found in the retrieved context, the system responds with:
 
 "I don't know."
 
-🔍 Key Design Decisions
+- Key Design Decisions
 
 No hallucination by default — answers are strictly constrained to retrieved document context
 
@@ -138,7 +138,7 @@ Modular architecture — retriever, LLM, and prompt logic are cleanly separated
 
 Production-style setup — backend-first design, frontend-agnostic
 
-📌 Limitations
+- Limitations
 
 No OCR support (image-based PDFs not handled)
 
@@ -146,7 +146,7 @@ Stateless Q&A (no chat memory yet)
 
 Local vector database (not distributed)
 
-🔮 Possible Extensions
+- Possible Extensions
 
 Conversational memory (chat history)
 
@@ -158,6 +158,6 @@ Source highlighting with page numbers
 
 Evaluation metrics for retrieval quality
 
-📄 License
+- License
 
 This project is for educational and portfolio purposes.
